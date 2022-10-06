@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Logo";
+  font-display: fallback;
+
+  src: url("./Raleway-ExtraLight.ttf") format("truetype"),
+    url("./Raleway-ExtraLight.woff") format("woff");
+}
