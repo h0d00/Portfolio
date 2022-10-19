@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Typewriter from "typewriter-effect";
 import { BiDownArrowAlt } from "react-icons/bi";
+import { Link } from "react-scroll";
+
 export default function Main() {
   return (
     <Wrap>
@@ -20,7 +22,9 @@ export default function Main() {
               .typeString("프론트엔드 개발자")
               .pauseFor(100)
               .typeString(
-                `<br/> <span style="color: #27ae60;">임호준</span>입니다.`
+                `<br/><span style=" background: linear-gradient(45deg, Violet, Orange);
+                font-size:50px;
+                color: transparent; -webkit-background-clip: text;">임호준</span> 입니다.`
               )
               .start()
               .pauseFor(100);
@@ -28,40 +32,48 @@ export default function Main() {
         />
       </Box>
       <Arrow>
-        <BiDownArrowAlt />
-        <br />
-        스크롤을 내려주세요.
+        <Link to="1" spy={true} smooth={true}>
+          <BiDownArrowAlt />
+          <br />
+          스크롤을 내려주세요.
+        </Link>
       </Arrow>
     </Wrap>
   );
 }
 const Wrap = styled.div`
   height: 100vh;
+  background-color: #000000;
 `;
 
 const Box = styled.div`
   margin: 0 auto;
-  width: 70%;
+  width: 90%;
   height: 90vh;
   display: grid;
   place-items: center;
   text-align: center;
+  color: #cecece;
   font-size: 35px;
 `;
 
 const Arrow = styled.div`
+  width: 30%;
+  margin: auto;
   text-align: center;
+  color: #cecece;
   svg {
     font-size: 30px;
-    animation: motion 0.7s linear 0s infinite alternate;
+    animation: motion 0.6s linear 0s infinite alternate;
     margin-top: 0;
+    cursor: pointer;
   }
   @keyframes motion {
     0% {
       margin-top: 0px;
     }
     100% {
-      margin-top: 10px;
+      margin-top: 7px;
     }
   }
 `;
