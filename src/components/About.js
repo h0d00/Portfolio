@@ -50,7 +50,7 @@ export default function About(props) {
           <Bottom>
             <span
               style={{
-                fontSize: `${position / 30}px`,
+                fontSize: `${position / 50}px`,
               }}
             >
               사용자에게 최고의 서비스를 선물하는
@@ -71,7 +71,7 @@ export default function About(props) {
 const Wrap = styled.div`
   height: 100vh;
   padding-top: 5vh;
-  position: sticky;
+
   background-color: #000000;
   color: #cecece;
 `;

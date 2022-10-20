@@ -22,7 +22,7 @@ function App() {
       <Main />
       <About position={position} />
       <Skill position={position} />
-      <Project />
+      <Project position={position} />
     </div>
   );
 }
