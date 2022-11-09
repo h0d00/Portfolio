@@ -4,6 +4,8 @@ import Header from "./components/Header";
 import Main from "./components/Main";
 import Project from "./components/Project";
 import Skill from "./components/Skill";
+import "./App.css";
+
 function App() {
   const [position, setPosition] = useState(0);
   function onScroll() {
