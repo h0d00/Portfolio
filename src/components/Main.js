@@ -48,7 +48,7 @@ const Wrap = styled.div`
 
 const Box = styled.div`
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   height: 90vh;
   display: grid;
   place-items: center;
@@ -58,7 +58,7 @@ const Box = styled.div`
 `;
 
 const Arrow = styled.div`
-  width: 30%;
+  width: 100%;
   margin: auto;
   text-align: center;
   color: #cecece;

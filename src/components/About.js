@@ -50,14 +50,12 @@ export default function About(props) {
           <Bottom>
             <span
               style={{
-                fontSize: `${position / 50}px`,
+                fontSize: `${position / 60}px`,
               }}
             >
               사용자에게 최고의 서비스를 선물하는
               <br />
-              <br />
               누구든지 쉽게 이용할 수 있는
-              <br />
               <br />
               최고의 웹 사이트를 개발하고싶습니다.
             </span>
@@ -69,16 +67,15 @@ export default function About(props) {
 }
 
 const Wrap = styled.div`
-  height: 100vh;
+  min-height: 100vh;
   padding-top: 5vh;
-
   background-color: #000000;
   color: #cecece;
 `;
 
 const AboutWrap = styled.div`
   margin: 0 auto;
-  width: 90%;
+  width: 100%;
   text-align: center;
 
   h1 {
@@ -88,10 +85,10 @@ const AboutWrap = styled.div`
 
 const Top = styled.div`
   margin: 100px auto;
-  width: 70%;
+  width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 100px;
+  flex-direction: column;
+  gap: 30px;
 `;
 
 const PhotoWrap = styled.div`
@@ -102,15 +99,20 @@ const PhotoWrap = styled.div`
 `;
 
 const Won = styled.div`
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
   border-radius: 100%;
-  background: linear-gradient(45deg, Violet, Orange);
+  background: linear-gradient(40deg, Violet, Orange);
   overflow: hidden;
 `;
 
 const SnsWrap = styled.div`
+  margin: auto;
   width: 200px;
   font-size: 24px;
-  display: grid;
+  display: flex;
+  justify-content: space-between;
 `;
 
 const SnsBtn = styled.div`
@@ -131,8 +133,7 @@ const SnsBtn = styled.div`
     color: black;
   }
   :hover {
-    width: 200px;
-    transition: 0.5s;
+    transition: 0.4s;
     background: linear-gradient(45deg, Violet, Orange);
   }
 `;
@@ -141,4 +142,6 @@ const Bottom = styled.div`
   width: 100%;
   margin: 0 auto;
   height: 300px;
+  text-overflow: clip;
+  line-height: 40px;
 `;

@@ -31,10 +31,7 @@ export default function Project(props) {
                 <SiJavascript color="#eed91b" />
                 <FaReact color="#7ad9f4" />
               </Skill>
-              <div>
-                jsonplaceholder를 이용한 RESTful 비동기 통신 후 Redux를 이용하여
-                상품목록 구현
-              </div>
+              <div>HTTP 통신 후 Redux를 이용하여 상품목록 구현</div>
               <div>
                 localstorage를 이용해서 장바구니 기능 / 라이트모드 다크모드 구현
               </div>
@@ -111,11 +108,8 @@ export default function Project(props) {
 }
 
 const Wrap = styled.div`
-  height: 100vh;
-  padding-top: 5vh;
   background-color: #000000;
   color: #cecece;
-
   h1 {
     font-size: 50px;
     text-align: center;
@@ -124,14 +118,21 @@ const Wrap = styled.div`
 
 const ProjectWrap = styled.div`
   margin: 100px auto;
-  width: 95%;
+  width: 70%;
   display: flex;
   flex-direction: column;
   gap: 100px;
+  font-size: 18px;
+  @media screen and (max-width: 850px) {
+    width: 90%;
+  }
+  @media screen and (max-width: 660px) {
+    width: 96%;
+    font-size: 14px;
+  }
 `;
 
 const ProjectItem = styled.div`
-  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 50px;
@@ -139,7 +140,6 @@ const ProjectItem = styled.div`
 
 const ProjectImg = styled.div`
   margin: 0 auto;
-  width: 60%;
   img {
     width: 100%;
   }
@@ -147,11 +147,9 @@ const ProjectImg = styled.div`
 
 const Detail = styled.div`
   margin: 0 auto;
-  width: 60%;
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-size: 18px;
 `;
 
 const Skill = styled.div`

@@ -30,14 +30,16 @@ export default function Skill(props) {
 }
 
 const Wrap = styled.div`
-  height: 100vh;
-  padding-top: 5vh;
+  margin: 0 auto;
+  min-height: 1vh;
+  width: 100%;
+  padding: 50px 0;
   color: white;
   background: rgb(0, 0, 0);
   background: ${(props) => `
   linear-gradient(
-    ${props.position / 13}deg,
-    rgba(0,0,0,1) 5%, rgba(149,15,195,1) 27%, rgba(139,200,200,1) 67%, rgba(0,0,0,1) 90%
+    ${props.position / 4}deg,
+    red, blue
   )
   `};
 
@@ -48,11 +50,12 @@ const Wrap = styled.div`
 `;
 
 const SkillZone = styled.div`
-  margin: 200px auto;
-  width: 70%;
+  margin: 50px auto;
+  width: 100%;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   img {
-    width: 200px;
+    width: 150px;
   }
 `;
